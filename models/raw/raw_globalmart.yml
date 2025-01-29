@@ -9,4 +9,17 @@ models:
         - unique
         - not_null
         
+  - name: raw_orders
+    columns:
+    - name: ORDERID
+      description: ORDERID should be unique and not null
+      tests:
+        - unique
+        - not_null
+    - name: SHIPMODE
+      description: SHIPMODE should contain specific values
+      tests:
+        - accepted_values:
+            values: ['First Class', 'Same Day', 'Second Class', 'Standars Class']
+          
     
