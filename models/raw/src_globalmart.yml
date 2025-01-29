@@ -8,8 +8,3 @@ sources:
       - name: CUSTOMERS
       - name: ORDERS
       - name: PRODUCT
-            columns:
-              loaded_at_field: loadedat
-              freshness:
-                warn_after: {count12, period:hour}
-                error_after: {count24, period:hour}
