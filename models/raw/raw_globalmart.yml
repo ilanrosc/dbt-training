@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: raw_customer
+    columns:
+    - name: CUSTOMERID
+      description: CUSTOMER ID should be unique
+      tests:
+        - unique
+        - not_null
+        
+    
