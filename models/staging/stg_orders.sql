@@ -7,6 +7,8 @@ select
     , o.ORDERSELLINGPRICE - o.ORDERCOSTPRICE as ORDER_PROFIT
     , o.ORDERCOSTPRICE
     , o.ORDERSELLINGPRICE
+    , o.PRODUCTID
+    , o.CUSTOMERID
 -- from raw customers
     , c.CUSTOMERNAME
     , c.SEGMENT
